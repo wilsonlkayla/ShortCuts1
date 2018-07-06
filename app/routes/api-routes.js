@@ -11,10 +11,10 @@ var Customer = require("../models/customer.js");
 // =============================================================
 module.exports = function(app) {
 
-  // Get all chirps
+  // Get all customers
   app.get("/api/all", function(req, res) {
 
-    // Finding all Chirps, and then returning them to the user as JSON.
+    // Finding all Customers, and then returning them to the user as JSON.
     // Sequelize queries are asynchronous, which helps with perceived speed.
     // If we want something to be guaranteed to happen after the query, we'll use
     // the .then function
@@ -28,7 +28,7 @@ module.exports = function(app) {
   // Add a customer's order
   app.post("/api/new", function(req, res) {
 
-    console.log("Chirp Data:");
+    console.log("Customer Info:");
     console.log(req.note);
 
     Customer.create({
@@ -38,7 +38,7 @@ module.exports = function(app) {
       note: req.body.note,
       created_at: req.body.created_at
     }).then(function(results) {
-      // `results` here would be the newly created chirp
+      // `results` here would be the newly created customer
       res.end();
     });
 
