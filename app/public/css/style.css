@@ -108,7 +108,7 @@ body {
 
   /* This is for the customer box */
   /*======================================*/
-  .chirp {
+  .customer {
     padding: 10px;
     margin: 10px;
     color: white;
@@ -116,7 +116,7 @@ body {
     border: 1px solid gray;
   }
   .cool-font {
-    font-family: Shrikhand, cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 24px;
-    color: #1da1f2;
+    color: black;
   }
