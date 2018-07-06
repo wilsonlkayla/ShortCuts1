@@ -1,7 +1,7 @@
 /* global moment */
 
 // When user clicks add-btn
-$("#chirp-submit").on("click", function(event) {
+$("#customer-submit").on("click", function(event) {
     event.preventDefault();
   
     // Make a newCustomer object
@@ -9,7 +9,7 @@ $("#chirp-submit").on("click", function(event) {
       customer_name: $("#author").val().trim(),
       phone: $("#phone").val().trim(),
       time: $("#time").val().trim(),
-      note: $("#chirp-box").val().trim(),
+      note: $("#customer-box").val().trim(),
       created_at: moment().format("YYYY-MM-DD HH:mm:ss")
     };
   
@@ -21,7 +21,7 @@ $("#chirp-submit").on("click", function(event) {
       .then(function() {
   
         var row = $("<div>");
-        row.addClass("chirp");
+        row.addClass("customer");
   
         row.append("<h3>" + newCustomer.customer_name + "</h3>");
         row.append("<p>" + "- Phone Number: " + newCustomer.phone + "</p>");
@@ -29,7 +29,7 @@ $("#chirp-submit").on("click", function(event) {
         row.append("<p>" + "- At: " + newCustomer.time + "</p>");
         row.append("<p>Receipt Created At: " + moment(newCustomer.created_at).format("h:mma on dddd") + "</p>");
   
-        $("#chirp-area").prepend(row);
+        $("#customer-area").prepend(row);
   
       });
   
@@ -37,10 +37,10 @@ $("#chirp-submit").on("click", function(event) {
     $("#author").val("");
     $("#phone").val("");
     $("#time").val("");
-    $("#chirp-box").val("");
+    $("#customer-box").val("");
   });
   
-  // When the page loads, grab all of our chirps
+  // When the page loads, grab all of our customers
   $.get("/api/all", function(data) {
   
     if (data.length !== 0) {
@@ -48,7 +48,7 @@ $("#chirp-submit").on("click", function(event) {
       for (var i = 0; i < data.length; i++) {
   
         var row = $("<div>");
-        row.addClass("chirp");
+        row.addClass("customer");
   
         row.append("<h3>" + data[i].customer_name + "</h3>");
         row.append("<p>- Requested a: " + data[i].note + "</p>");
@@ -56,7 +56,7 @@ $("#chirp-submit").on("click", function(event) {
         row.append("<p>- Phone Number: " + data[i].phone + "</p>");
         row.append("<p>Receipt Created at: " + moment(data[i].created_at).format("h:mma on dddd") + "</p>");
   
-        $("#chirp-area").prepend(row);
+        $("#customer-area").prepend(row);
   
       }
   
