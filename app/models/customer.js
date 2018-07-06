@@ -16,7 +16,7 @@ var Customer = sequelize.define("Customer", {
   time: Sequelize.STRING,
   // What they want to get done
   note: Sequelize.STRING,
- // created_at: Sequelize.DATE
+  // created_at: Sequelize.DATE
 });
 
 // Syncs with DB
