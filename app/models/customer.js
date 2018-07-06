@@ -6,7 +6,7 @@ var Sequelize = require("sequelize");
 // sequelize (lowercase) references our connection to the DB.
 var sequelize = require("../config/connection.js");
 
-// Creates a "Chirp" model that matches up with DB
+// Creates a "Customer" model that matches up with DB
 var Customer = sequelize.define("Customer", {
   // Their Name
   customer_name: Sequelize.STRING,
@@ -22,5 +22,5 @@ var Customer = sequelize.define("Customer", {
 // Syncs with DB
 Customer.sync();
 
-// Makes the Chirp Model available for other files (will also create a table)
+// Makes the Customer Model available for other files (will also create a table)
 module.exports = Customer;
