@@ -3,7 +3,7 @@
 ### Overview
 This application was created to assist customers with scheduling an appointment with their local barbershop or stylist. The customer will have the ability to request his/her appointment and see who is currently waiting in the queue to get hair service.
 
-https://immense-dusk-92411.herokuapp.com/
+https://powerful-refuge-88181.herokuapp.com/
 
 ### Technologies Used
   * HTML
