@@ -7,6 +7,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+var React = require("react");
+var ReactDOM = require("react-dom");
 
 // Sets up the Express App
 // =============================================================
@@ -38,6 +40,15 @@ app.get("/table", function(req, res) {
 // =============================================================
 require("./app/routes/api-routes.js")(app);
 
+// React Components
+// ============================
+// class MyComponent extends React.Component {
+//   render() {
+//     return <div> Hello World </div>;
+//   }
+// }
+
+React.DOM.render(<MyComponent />, node);
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {

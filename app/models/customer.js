@@ -10,10 +10,12 @@ var sequelize = require("../config/connection.js");
 var Customer = sequelize.define("Customer", {
   // Their Name
   customer_name: Sequelize.STRING,
+  //Their Email
+  email: Sequelize.STRING,
   // Their Number
   phone: Sequelize.STRING,
   // Time of the start of the appointment
-  time: Sequelize.STRING,
+  allergies: Sequelize.BOOLEAN,
   // What they want to get done
   note: Sequelize.STRING,
   // created_at: Sequelize.DATE
