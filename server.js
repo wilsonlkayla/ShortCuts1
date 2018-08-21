@@ -48,7 +48,7 @@ require("./app/routes/api-routes.js")(app);
 //   }
 // }
 
-React.DOM.render(<MyComponent />, node);
+// React.DOM.render(<MyComponent />, node);
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
