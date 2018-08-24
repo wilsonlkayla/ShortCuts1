@@ -1,35 +1,163 @@
 <!DOCTYPE html>
-<html>
-<head>
-        <!-- Favicon -->
-    <link rel="icon"
-    type="image/png"
-    href="./icon.png">
+<html lang="en">
+    <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ShortCutz</title>
-        <!-- Bulma -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-        <!-- jQuery -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <!-- Moment.js -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js"></script>
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
-    
-        
-        <link rel="stylesheet" href="./css/style.css">  
+        <title>Appointment Page</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+        <!-- Calendar -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3" id="form_container">
+                    <h2>Appointments</h2> 
+                    <p> Please send your message below. We will get back to you at the earliest! </p>
+                    <!-- <form role="form" method="post" id="reused_form">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="message"> Message:</label>
+                                <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> Your Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="email"> Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-default pull-right" >Send &rarr;</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your message successfully!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container"> -->
+
+    <div class="container">
+
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-5">
+            <hr class="marginbot-50">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="boxed-grey">
+  
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form id="contact-form" action="" method="post" role="form" class="contactForm">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="name">
+                                  Name</label>
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">
+                                  Email Address</label>
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validation"></div>
+                      </div>
+                      <label for="phone-number">
+                        Phone Number</label>
+                    <div class="form-group">
+                      <input type="phone-number" class="form-control" name="phone-number" id="phone-number" placeholder="(281-330-8004)" data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="c-form-products">
+                          <span class="label-text">Custom Made:</span> 
+                          <span class="contact-error"></span>
+                      </label>
+                      <select name="products" class="c-form-products form-control" id="c-form-products">
+                          <option value="Hair">Hair</option>
+                          <option value="Lipstick">Lipstick</option>
+                          <option value="Highlighter">Highlighter</option>
+                          <option value="Body Products">Body </option>
+                          <option value="Bundle Pack">Bundle Pack</option>
+                          <option value="Suprise-Me">Suprise Me</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="c-form-allergies">
+                        <span class="label-text">Any allergies?</span> 
+                        <span class="contact-error"></span>
+                    </label>
+                    <select name="allergies" class="c-form-allergies form-control" id="c-form-allergies">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="subject">
+                                  Subject</label>
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="name">
+                                  Message</label>
+                      <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="btn btn-skin pull-right" id="customer-submit"> Send Message</button>
+                  </div>
+                </div>
+                
+
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+      showOn: "button",
+      buttonImage: "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjG1JqsnYLdAhWOON8KHZGJCv8QjRx6BAgBEAU&url=https%3A%2F%2Fwww.freepik.com%2Ffree-icon%2Fcalendar-icon-in-black_695384.htm&psig=AOvVaw2J5o3B5ggjfvpJKH1B-NKt&ust=1535081211246055",
+      buttonImageOnly: true,
+      buttonText: "Select date"
+    });
+  } );
+  </script>
 </head>
 <body>
-   
-    <div class="home-button">
-        <!-- Home page button -->
-        <a href="/"><button class="btn btn-primary home-button"><span class="glyphicon glyphicon-list-alt"></span>Home</button></a>
-    </div>
-    <!-- customer div right here -->
-    <div id="customer-area"></div>
-
-    <script type="text/javascript" src="js/display.js"></script>
+ 
+<p>Date: <input type="text" id="datepicker"></p>
+ 
+ 
 </body>
+</html>
+              </form>
+            </div>
+          </div>
+    </body>
 </html>

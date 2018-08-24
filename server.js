@@ -9,6 +9,7 @@ var bodyParser = require("body-parser");
 var path = require("path");
 var React = require("react");
 var ReactDOM = require("react-dom");
+var mongoose = require("mongoose");
 
 // Sets up the Express App
 // =============================================================
@@ -32,8 +33,8 @@ app.get("/", function(req, res) {
 })
 
 // And this to the second
-app.get("/table", function(req, res) {
-  res.sendFile(path.join(__dirname, "./app/public/table.html"))
+app.get("/link", function(req, res) {
+  res.sendFile(path.join(__dirname, "./app/public/link.html"))
 })
 
 // Routes

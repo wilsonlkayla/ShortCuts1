@@ -1,2 +1,3 @@
 DROP DATABASE IF EXISTS `appt_db`;
 CREATE DATABASE `appt_db`;
+

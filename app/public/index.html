@@ -21,6 +21,8 @@
   <link href="color/default.css" rel="stylesheet">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
+  <!-- JS -->
+  <link href="../public/js/button.js"> 
 
 
 </head>
@@ -49,14 +51,8 @@
           <li class="active"><a href="#intro">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#service">Make an Appointment</a></li>
-          <li><a href="#contact">The Details</a></li>
-          <!-- <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Example menu</a></li>
-              <li><a href="#">Example menu</a></li>
-              <li><a href="#">Example menu</a></li>
-            </ul> -->
+          <li><a href="#contact">Stay In Touch</a></li>
+         
           </li>
         </ul>
       </div>
@@ -69,7 +65,7 @@
   <section id="intro" class="intro">
 
     <div class="slogan">
-      <h2>Bél Page <span class="text_color"></span> </h2>
+      <h2>Bél Beauté <span class="text_color"></span> </h2>
       <h4>Because we're sick of waiting</h4>
     </div>
     <div class="page-scroll">
@@ -89,11 +85,8 @@
             <div class="wow bounceInDown" data-wow-delay="0.5s">
               <div class="section-heading">
                 <h2>About us</h2>
-                <p>Lorem Khaled Ipsum is a major key to success. Find peace, life is like a water fall, you’ve gotta flow. Learning is cool, but knowing is better, and I know the key to success. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. The key to more success is to have a lot of pillows. Cloth talk. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing.
-
-                  Cloth talk. Life is what you make it, so let’s make it. Fan luv. Every chance I get, I water the plants, Lion! The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Eliptical talk. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender. Don’t ever play yourself. They key is to have every key, the key to open every door.
-                  
-                  </p>
+                <p> We like our beauty clean—pure, unprocessed and safe. We embrace food-inspired ingredients for nourishing performance. 
+                    And of course, we never use the obvious nasties, including parabens, sulfates, or phthalates. Bél Beauté is cruelty-free and Leaping Bunny certified.</p>
                 <i class="fa fa-2x fa-angle-down"></i>
 
               </div>
@@ -104,55 +97,7 @@
     </div>
     <div class="container">
 
-      <!-- <div class="row">
-        <div class="col-lg-2 col-lg-offset-5">
-          <hr class="marginbot-50">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="wow bounceInUp" data-wow-delay="0.2s">
-            <div class="team boxed-grey">
-              <div class="inner">
-                <h5>Anna Hanaceck</h5>
-                <p class="subtitle">Pixel Crafter</p>
-                <div class="avatar"><img src="img/team/1.jpg" alt="" class="img-responsive img-circle" /></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="wow bounceInUp" data-wow-delay="0.5s">
-            <div class="team boxed-grey">
-              <div class="inner">
-                <h5>Maura Daniels</h5>
-                <p class="subtitle">Ruby on Rails</p>
-                <div class="avatar"><img src="img/team/2.jpg" alt="" class="img-responsive img-circle" /></div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="wow bounceInUp" data-wow-delay="0.8s">
-            <div class="team boxed-grey">
-              <div class="inner">
-                <h5>Jack Briane</h5>
-                <p class="subtitle">jQuery Ninja</p>
-                <div class="avatar"><img src="img/team/3.jpg" alt="" class="img-responsive img-circle" /></div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="wow bounceInUp" data-wow-delay="1s">
-            <div class="team boxed-grey">
-              <div class="inner">
-                <h5>Tom Petterson</h5>
-                <p class="subtitle">Typographer</p>
-                <div class="avatar"><img src="img/team/4.jpg" alt="" class="img-responsive img-circle" /></div> -->
-
+ 
               </div>
             </div>
           </div>
@@ -179,26 +124,13 @@
                   <button type="submit" class="btn btn-skin" id="btnAppt"> Make An Appointment</button> -->
 
 
-  <!-- Trigger the modal with a button -->
-  
-  <button type="button" class="btn btn-info btn-lg"> <a href="link.html" class="button">Make Appointment</a> </button>
+  <!-- Link to the appointment page -->
+  <!-- <h1>React Button Example</h1> -->
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <!-- <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div> -->
+  <div id="root"></div>
+<button type="button" class="btn btn-secondary"> <a href="link.html" class="button"> Make Appointment </a> </button>
+
+  
       </div>
       
     </div>
@@ -242,7 +174,7 @@
           <div class="col-lg-8 col-lg-offset-2">
             <div class="wow bounceInDown" data-wow-delay="0.4s">
               <div class="section-heading">
-                <h2>The Details</h2>
+                <h2>Stay in Touch</h2>
                 <i class="fa fa-2x fa-angle-down"></i>
 
               </div>
@@ -253,111 +185,38 @@
     </div>
     <div class="container">
 
+        <h5>Main Office</h5>
+
+        <address>
+      <strong>Bél Page Inc.</strong><br>
+      1601 E. Market Street
+      Greensboro, NC 27411<br>
+      <abbr title="Phone">P:</abbr> (281)-330-8004  
+      <strong>Email</strong><br>
+      <a href="mailto:#">wilsonlkayla@gmail.com</a>
+      </address>
+
+      <strong>We're on social networks</strong><br>
+    
+                     
+   
+      <li class="social-facebook"><a href="https://www.facebook.com/groups/blktechclt/about/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      <li class="social-twitter"><a href="https://twitter.com/volunteerBGCRD?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li class="social-github"><a href="https://github.com/wilsonlkayla" target="_blank"><i class="fa fa-github"></i></a></li>
+      <li class="social-linkedin"><a href="https://www.linkedin.com/in/kaylwilson/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+    
+    
+          
+  
       <div class="row">
         <div class="col-lg-2 col-lg-offset-5">
           <hr class="marginbot-50">
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="boxed-grey">
 
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <form id="contact-form" action="" method="post" role="form" class="contactForm">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="name">
-                                Name</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">
-                                Email Address</label>
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                      <div class="validation"></div>
-                    </div>
-                    <label for="phone-number">
-                      Phone Number</label>
-                  <div class="form-group">
-                    <input type="phone-number" class="form-control" name="phone-number" id="phone-number" placeholder="(281-330-8004)" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                    <label for="c-form-products">
-                        <span class="label-text">Custom Made:</span> 
-                        <span class="contact-error"></span>
-                    </label>
-                    <select name="products" class="c-form-products form-control" id="c-form-products">
-                        <option value="Hair">Hair</option>
-                        <option value="Lipstick">Lipstick</option>
-                        <option value="Highlighter">Highlighter</option>
-                        <option value="Body Products">Body </option>
-                        <option value="Bundle Pack">Bundle Pack</option>
-                        <option value="Suprise-Me">Suprise Me</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                  <label for="c-form-allergies">
-                      <span class="label-text">Any allergies?</span> 
-                      <span class="contact-error"></span>
-                  </label>
-                  <select name="allergies" class="c-form-allergies form-control" id="c-form-allergies">
-                      <option value="Yes">Yes</option>
-                      <option value="No">No</option>
-                  </select>
-              </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="subject">
-                                Subject</label>
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="name">
-                                Message</label>
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <button type="submit" class="btn btn-skin pull-right" id="customer-submit"> Send Message</button>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
 
-        <div class="col-lg-4">
-          <div class="widget-contact">
-            <h5>Main Office</h5>
-
-            <address>
-          <strong>Bél Page Inc.</strong><br>
-          1601 E. Market Street
-          Greensboro, NC 27411<br>
-				  <abbr title="Phone">P:</abbr> (281)-330-8004
-				</address>
-
-            <address>
-				  <strong>Email</strong><br>
-				  <a href="mailto:#">wilsonlkayla@gmail.com</a>
-				</address>
-            <address>
-				  <strong>We're on social networks</strong><br>
-                       	<ul class="company-social">
-                            <li class="social-facebook"><a href="https://www.facebook.com/groups/blktechclt/about/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li class="social-twitter"><a href="https://twitter.com/volunteerBGCRD?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li class="social-github"><a href="https://github.com/wilsonlkayla" target="_blank"><i class="fa fa-github"></i></a></li>
-                            <li class="social-linkedin"><a href="https://www.linkedin.com/in/kaylwilson/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-				</address>
 
           </div>
         </div>
@@ -366,6 +225,7 @@
     </div>
   </section>
   <!-- /Section: contact -->
+
 
   <footer>
     <div class="container">
@@ -382,6 +242,10 @@
           <div class="credits">
          
             With assistance from Youtube, Google, TAs, and Friends</a>
+            <address>
+                
+   
+   
           </div>
         </div>
       </div>
